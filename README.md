@@ -2,5 +2,6 @@
 AWS Scripts
 ===========
 
-The shellscript s3auth.sh demonstrates an authenticated S3 GET.
+s3auth.sh - shellscript to demonstrate an authenticated HTTPS GET to
+Amazon's Simple Storage Service (S3) using only bash, openssl, and curl.
 
