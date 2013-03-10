@@ -42,7 +42,7 @@ objpath="$2"
 s3host="${bucket}.s3.amazonaws.com";
 date="$(date -u '+%a, %d %b %Y %H:%M:%S %Z')"
 signature="$( s3sign "GET" "/${bucket}${objpath}" "${date}" )"
-url="http://${s3host}${objpath}"
+url="https://${s3host}${objpath}"
 auth="Authorization: AWS ${AWS_ACCESS_KEY_ID}:${signature}"
 
 curl -H "$auth" -H "Date: $date" -s "$url"
